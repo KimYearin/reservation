@@ -26,17 +26,31 @@ reservation 웹 페이지 만들기1
 ***
 
 
-<main page 1 >
+
+
+ <p>main page 1<br>
+ - 프로모션 이미지는 무한 슬라이딩으로 계속 넘어간다.  </p>
 <img width="600" height="300" src=https://user-images.githubusercontent.com/51191647/88021272-253ccb80-cb68-11ea-9d6d-60575d16f5c6.JPG>
-- 프로모션 이미지는 무한 슬라이딩으로 계속 넘어간다.  
 
-<main page 2>
+
+
+
+
+ <p>main page 2<br>
+  - 전체리스트/전시/뮤지컬 등 해당섹션을 클릭하면 섹션별로 정보가 아래에 뜬다.</p>
 <img width="600" height="300" src=https://user-images.githubusercontent.com/51191647/88021283-2968e900-cb68-11ea-9da6-304a29a88c37.JPG>
-- 전체리스트/전시/뮤지컬 등 해당섹션을 클릭하면 섹션별로 정보가 아래에 뜬다.
 
-<main page 3>
+
+
+
+
+ <p>main page 3<br>
+  - 더보기 버튼을 누르면 4개씩 정보가 추가된다.</p>
 <img width="600" height="300" src=https://user-images.githubusercontent.com/51191647/88021291-2bcb4300-cb68-11ea-8b53-e218ed073435.JPG>
-- 더보기 버튼을 누르면 4개씩 정보가 추가된다.
 
-<데이터 UML>
+
+
+
+
+<p>데이터 UML</p>
 <img width="600" height="300" src=https://user-images.githubusercontent.com/51191647/88021296-2cfc7000-cb68-11ea-9479-aeb700d13f30.JPG>
