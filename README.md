@@ -31,7 +31,7 @@ reservation 웹 페이지 만들기1
  <p>main page 1<br>
  - 프로모션 이미지는 무한 슬라이딩으로 계속 넘어간다.  </p>
 <img width="600" height="300" src=https://user-images.githubusercontent.com/51191647/88021272-253ccb80-cb68-11ea-9d6d-60575d16f5c6.JPG>
-
+<br>
 
 
 
@@ -39,18 +39,44 @@ reservation 웹 페이지 만들기1
  <p>main page 2<br>
   - 전체리스트/전시/뮤지컬 등 해당섹션을 클릭하면 섹션별로 정보가 아래에 뜬다.</p>
 <img width="600" height="300" src=https://user-images.githubusercontent.com/51191647/88021283-2968e900-cb68-11ea-9da6-304a29a88c37.JPG>
-
-
+<br>
 
 
 
  <p>main page 3<br>
   - 더보기 버튼을 누르면 4개씩 정보가 추가된다.</p>
 <img width="600" height="300" src=https://user-images.githubusercontent.com/51191647/88021291-2bcb4300-cb68-11ea-8b53-e218ed073435.JPG>
-
-
-
+<br>
 
 
 <p>데이터 UML</p>
 <img width="600" height="300" src=https://user-images.githubusercontent.com/51191647/88021296-2cfc7000-cb68-11ea-9479-aeb700d13f30.JPG>
+<br>
+
+
+***
+<백엔드 구조>
+- config
+  - ApplicationConfig : @Configuration
+                        @ComponentScan(basePackages = {"kr.or.connect.reservation.dao", "kr.or.connect.reservation.service"})
+                        @Import({DBConfig.class})
+  - DBConfig : JDBC Driver를 이용해서 MySQL접근, username과 password이용
+  - WebMvcContextConfiguration : 처음 보여주는 페이지 설정
+  
+- controller
+  - ReservationApiController : WEB API 구현
+  
+     a. /api/products 상품 목록 구하기 (get) <br>
+     b. /api/products/{displayInfoId} 상품 전시 정보 구하기 (get) <br>
+     c. /api/categories 카테고리 목록 구하기 (get) <br>
+     d. /api/promotions 프로모션 목록 구하기 (get) <br>
+     
+  - ReservationController
+- dao
+- dto
+- service
+- service.impl
+- 
+
+
+
