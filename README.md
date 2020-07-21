@@ -92,42 +92,42 @@ reservation 웹 페이지 만들기1
     
     
 - dao
- - ProductDao 
-  1. 전체갯수 구하기
-  2. 카테고리별 개수 구하기
-  3. promotion갯수 구하기
-  4. id값 받아서 file_info 삭제(delete_flag 변경)
-  5. file_info 삽입
-  6. file_info update
-  7. file_info 객체 select
-  8. display_info 객체 받기
-  9. display_info 업데이트
-  10. product_price 객체 받기
-  11. product_price업데이트
-  12. category id, name별 정보 select
+	- ProductDao 
+	  1. 전체갯수 구하기
+	  2. 카테고리별 개수 구하기
+	  3. promotion갯수 구하기
+	  4. id값 받아서 file_info 삭제(delete_flag 변경)
+	  5. file_info 삽입
+	  6. file_info update
+	  7. file_info 객체 select
+	  8. display_info 객체 받기
+	  9. display_info 업데이트
+	  10. product_price 객체 받기
+	  11. product_price업데이트
+	  12. category id, name별 정보 select
 
- - ProductDaoSqls
- 
- - PromotionDao
-  1. 프로모션 리스트 가져오기
-  2. 카테고리별 추가리스트 가져오기
-  3. 전체리스트 추가리스트 가져오기
-  
- - PromotionDaoSqls
+	 - ProductDaoSqls
+
+	 - PromotionDao
+	  1. 프로모션 리스트 가져오기
+	  2. 카테고리별 추가리스트 가져오기
+	  3. 전체리스트 추가리스트 가져오기
+
+	 - PromotionDaoSqls
  
 - dto
- - category
- - Display_info_image
- - Display_info
- - File_info
- - FrontForm
- - Product_image
- - Product_price
- - Product
- - Promotion
+ 	- category
+	 - Display_info_image
+	 - Display_info
+	 - File_info
+	 - FrontForm
+	 - Product_image
+ 	- Product_price
+	 - Product
+ 	- Promotion
  
 - service 계층
- - public static final Integer LIMIT = 4;
+	- public static final Integer LIMIT = 4;
 	- category별 front정보 가져오기
 	- category별 개수
 	- caegory id, name 가져오기
