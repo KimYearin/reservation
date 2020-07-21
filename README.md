@@ -50,15 +50,15 @@ reservation 웹 페이지 만들기1
 
 
 <p>데이터 UML</p>
-<img width="600" height="300" src=https://user-images.githubusercontent.com/51191647/88021296-2cfc7000-cb68-11ea-9479-aeb700d13f30.JPG>
+<img width="600" height="600" src=https://user-images.githubusercontent.com/51191647/88021296-2cfc7000-cb68-11ea-9479-aeb700d13f30.JPG>
 <br>
 
 
 ***
 <백엔드 구조>
 - config
-  - ApplicationConfig : @Configuration
-                        @ComponentScan(basePackages = {"kr.or.connect.reservation.dao", "kr.or.connect.reservation.service"})
+  - ApplicationConfig : @Configuration <br>
+                        @ComponentScan(basePackages = {"kr.or.connect.reservation.dao", "kr.or.connect.reservation.service"}) <br>
                         @Import({DBConfig.class})
   - DBConfig : JDBC Driver를 이용해서 MySQL접근, username과 password이용
   - WebMvcContextConfiguration : 처음 보여주는 페이지 설정
